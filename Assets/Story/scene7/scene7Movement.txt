@@ -1,0 +1,14 @@
+red faceRight green faceLeft pikachu faceRight
+start
+green pos1 faceUp
+red faceUp
+pikachu faceUp
+stop
+green faceDown
+start
+green pos2 hide
+waitTillStop
+start
+red pos3 hide
+pikachu pos3 hide
+stop

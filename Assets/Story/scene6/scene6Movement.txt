@@ -1,0 +1,6 @@
+start
+green faceUp
+red pos1 faceUp
+pikachu pos2 faceUp
+stop
+green faceDown

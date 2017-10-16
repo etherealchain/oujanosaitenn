@@ -1,0 +1,7 @@
+red faceUp pikachu faceUp
+red faceDown
+red faceUp
+start
+red pos1 hide
+pikachu pos1 hide
+stop

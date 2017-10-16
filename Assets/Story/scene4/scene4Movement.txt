@@ -1,0 +1,8 @@
+start
+red pos1 faceUp
+green pos2 faceUp
+waitTillStop
+red faceDown
+start
+red pos3 hide
+stop

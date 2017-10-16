@@ -1,0 +1,9 @@
+start
+pikachu faceLeft
+green pos1 faceUp
+blue pos2 faceUp
+red pos3 faceUp
+stop
+start
+pikachu pos4 hide
+stop

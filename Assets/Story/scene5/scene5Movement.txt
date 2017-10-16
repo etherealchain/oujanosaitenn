@@ -1,0 +1,13 @@
+oak faceRight green faceLeft
+start
+red pos1 faceDown
+pikachu pos2 faceDown
+stop
+start
+green pos3 faceUp
+blue pos4 faceUp
+oak pos5 faceLeft
+waitTillStop
+start
+pikachu pos6 faceDown
+stop

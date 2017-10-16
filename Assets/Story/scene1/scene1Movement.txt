@@ -1,0 +1,11 @@
+red faceUp green faceUp blue faceUp
+green faceRight
+red faceLeft blue faceRight
+tv off music off tvLight off
+red faceUp green faceUp blue faceUp
+green faceDown
+start
+green Exit hide
+blue Exit hide
+red Exit hide
+stop
