@@ -9,7 +9,6 @@ public class TextPlayer : MonoBehaviour {
 
 	public Transform textView;
 	public Transform arrow;
-	public TextAsset dialouge;
 	public float waitTimes = 0.08f;
 	[HideInInspector]
 	public bool isPlaying ;
@@ -30,8 +29,6 @@ public class TextPlayer : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
-		fileLines = dialouge.text.Split(new string[]{"\r\n","\n"},StringSplitOptions.None);
-		isFile = true;
 		TextRoutine = null;
 		fileIndex = 0;
 		playIndex = 0;
@@ -40,6 +37,29 @@ public class TextPlayer : MonoBehaviour {
 		over = false;
 		showArrow = true;
 		arrow.gameObject.SetActive(false);
+
+		string filename = SceneLoader.Instance.getCurrentSceneName();
+		TextAsset story;
+
+		switch(SceneLoader.Instance.currentLanguage){
+			default:
+			case SceneLoader.language.japanese:
+			story = Resources.Load("jp/"+filename) as TextAsset;
+			break;
+			case SceneLoader.language.english:
+			story = Resources.Load("en/"+filename) as TextAsset;
+			break;
+			case SceneLoader.language.chinese:
+			story = Resources.Load("ch/"+filename) as TextAsset;
+			break;
+		}
+		loadTextFile(story);
+	}
+
+	void loadTextFile(TextAsset script){
+		fileIndex = 0;
+		fileLines = script.text.Split(new string[]{"\r\n","\n"},StringSplitOptions.None);
+		isFile = true;
 	}
 
 	public void finishText(){

@@ -32,8 +32,9 @@ public class Game1Controller : MonoBehaviour {
 	bool riverGuarded ;
 
 	bool win ;
-	bool finish ;
-	bool changed ;
+	bool gameOver;
+	bool moveFinish ;
+	bool sceneChanged ;
 
 	AudioSource[] audioSources;
 
@@ -46,9 +47,11 @@ public class Game1Controller : MonoBehaviour {
 		labGuarded = false;
 		roadGuarded = false;
 		riverGuarded = false;
+
 		win = false;
-		finish = false;
-		changed = false;
+		gameOver = false;
+		moveFinish = false;
+		sceneChanged = false;
 		face = null;
 	}
 	void Start () {
@@ -67,14 +70,15 @@ public class Game1Controller : MonoBehaviour {
 			updateText();
 			updateGame(textPlayer.TextIndex);
 		}
-		if(finish ){
+
+		if(moveFinish ){
 			if(red.GetComponent<Mover>().moveComplete &&
 				green.GetComponent<Mover>().moveComplete &&
 				blue.GetComponent<Mover>().moveComplete )
 				{
-					if(!changed){
+					if(!sceneChanged){
 						SceneLoader.Instance.GetComponent<SceneLoader>().ChangeScene("scene3", true);
-						changed = true;
+						sceneChanged = true;
 					}
 				}
 		}
@@ -87,7 +91,7 @@ public class Game1Controller : MonoBehaviour {
 				green.GetComponent<Mover>().startPathFinding(lab.position);
 				blue.GetComponent<Mover>().hideWhenFinish = true;
 				blue.GetComponent<Mover>().startPathFinding(lab.position);
-				finish = true;
+				moveFinish = true;
 			}
 			else{
 				if(!gameOverView.gameObject.activeSelf){

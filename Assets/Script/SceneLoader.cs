@@ -8,6 +8,15 @@ public class SceneLoader : SingletonObject<SceneLoader>{
 
 	public Texture2D blackTexture;
 	public Texture2D whiteTexture;
+	[HideInInspector]
+	public language currentLanguage;
+	[HideInInspector]
+	public enum language{
+		japanese,
+		english,
+		chinese
+	}
+
 	float fadeSpeed ;
 	float alpha ;
 	int fadeDir ; 
@@ -15,7 +24,7 @@ public class SceneLoader : SingletonObject<SceneLoader>{
 	AudioSource audioSource ;
 	bool setAudio ;
 	bool useWhite;
-
+	
 	void Awake(){
 		DontDestroyOnLoad(this.gameObject);
 		fadeSpeed = 0.5f;
@@ -25,6 +34,7 @@ public class SceneLoader : SingletonObject<SceneLoader>{
 		audioSource = null;
 		setAudio = false;
 		useWhite = true;
+		currentLanguage = language.japanese;
 	}
 	void OnEnable(){
 		SceneManager.sceneLoaded += onLevelLoaded;
@@ -82,5 +92,9 @@ public class SceneLoader : SingletonObject<SceneLoader>{
 		useWhite = white;
 		fadeDir = 1;
 		StartCoroutine(waitforFade(scene));
+	}
+
+	public string getCurrentSceneName(){
+		return SceneManager.GetActiveScene().name;
 	}
 }
