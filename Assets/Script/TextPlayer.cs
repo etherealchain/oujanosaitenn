@@ -43,16 +43,17 @@ public class TextPlayer : MonoBehaviour {
 
 		switch(SceneLoader.Instance.currentLanguage){
 			default:
-			case SceneLoader.language.japanese:
+			case SceneLoader.Language.japanese:
 			story = Resources.Load("jp/"+filename) as TextAsset;
 			break;
-			case SceneLoader.language.english:
+			case SceneLoader.Language.english:
 			story = Resources.Load("en/"+filename) as TextAsset;
 			break;
-			case SceneLoader.language.chinese:
+			case SceneLoader.Language.chinese:
 			story = Resources.Load("ch/"+filename) as TextAsset;
 			break;
 		}
+		textView.GetComponent<Text>().font = SceneLoader.Instance.currentFont;
 		loadTextFile(story);
 	}
 

@@ -35,25 +35,25 @@ public class Title : MonoBehaviour {
 		Button en = languageView.transform.FindDeepChild("En").GetComponent<Button>();
 		Button ch = languageView.transform.FindDeepChild("Ch").GetComponent<Button>();
 		switch(SceneLoader.Instance.currentLanguage){
-			case SceneLoader.language.japanese:
+			case SceneLoader.Language.japanese:
 				jp.Select();
 				break;
-			case SceneLoader.language.english:
+			case SceneLoader.Language.english:
 				en.Select();
 				break;
-			case SceneLoader.language.chinese:
+			case SceneLoader.Language.chinese:
 				ch.Select();
 				break;
 		}
 	}
 
 	public void chooseJapanese(){
-		SceneLoader.Instance.currentLanguage = SceneLoader.language.japanese;
+		SceneLoader.Instance.setCurrentLanguage( SceneLoader.Language.japanese);
 	}
 	public void chooseEnglish(){
-		SceneLoader.Instance.currentLanguage = SceneLoader.language.english;
+		SceneLoader.Instance.setCurrentLanguage( SceneLoader.Language.english);
 	}
 	public void chooseChinese(){
-		SceneLoader.Instance.currentLanguage = SceneLoader.language.chinese;
+		SceneLoader.Instance.setCurrentLanguage( SceneLoader.Language.chinese);
 	}
 }

@@ -9,9 +9,11 @@ public class SceneLoader : SingletonObject<SceneLoader>{
 	public Texture2D blackTexture;
 	public Texture2D whiteTexture;
 	[HideInInspector]
-	public language currentLanguage;
+	public Language currentLanguage;
 	[HideInInspector]
-	public enum language{
+	public Font currentFont;
+	[HideInInspector]
+	public enum Language{
 		japanese,
 		english,
 		chinese
@@ -25,6 +27,7 @@ public class SceneLoader : SingletonObject<SceneLoader>{
 	bool setAudio ;
 	bool useWhite;
 	
+	
 	void Awake(){
 		DontDestroyOnLoad(this.gameObject);
 		fadeSpeed = 0.5f;
@@ -34,7 +37,8 @@ public class SceneLoader : SingletonObject<SceneLoader>{
 		audioSource = null;
 		setAudio = false;
 		useWhite = true;
-		currentLanguage = language.japanese;
+		currentLanguage = Language.japanese;
+		currentFont = Resources.Load("font/JKG-M_3") as Font;
 	}
 	void OnEnable(){
 		SceneManager.sceneLoaded += onLevelLoaded;
@@ -92,6 +96,21 @@ public class SceneLoader : SingletonObject<SceneLoader>{
 		useWhite = white;
 		fadeDir = 1;
 		StartCoroutine(waitforFade(scene));
+	}
+
+	public void setCurrentLanguage(Language lang){
+		currentLanguage = lang;
+		switch(currentLanguage){
+			case SceneLoader.Language.japanese:
+				currentFont = Resources.Load("font/JKG-M_3") as Font;
+				break;
+			case SceneLoader.Language.english:
+				currentFont = Resources.Load("font/arialbd") as Font;
+				break;
+			case SceneLoader.Language.chinese:
+				currentFont = Resources.Load("font/msjhbd") as Font;
+				break;
+		}
 	}
 
 	public string getCurrentSceneName(){

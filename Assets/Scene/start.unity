@@ -231,7 +231,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6fdeeb3e4149f6e4791da184d147f99f, type: 3}
+    m_Font: {fileID: 12800000, guid: 5c8c5d3d8f1bc064a9647ee1999992f8, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -282,7 +282,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textView: {fileID: 142345584}
   arrow: {fileID: 716257718}
-  dialouge: {fileID: 4900000, guid: 972149bd707521d4781e208b926bea49, type: 3}
   waitTimes: 0.05
   isPlaying: 0
   over: 0
