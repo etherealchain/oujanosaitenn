@@ -32,7 +32,7 @@ public class Game1Controller : MonoBehaviour {
 	bool riverGuarded ;
 
 	bool win ;
-	bool gameOver;
+	bool playEnd;
 	bool moveFinish ;
 	bool sceneChanged ;
 
@@ -49,7 +49,7 @@ public class Game1Controller : MonoBehaviour {
 		riverGuarded = false;
 
 		win = false;
-		gameOver = false;
+		playEnd = false;
 		moveFinish = false;
 		sceneChanged = false;
 		face = null;
@@ -68,7 +68,8 @@ public class Game1Controller : MonoBehaviour {
 		if(!isPlaying && (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Return))){
 			textPlayer.showArrow = true;
 			updateText();
-			updateGame(textPlayer.TextIndex);
+			if(!playEnd && !win)
+				updateGame(textPlayer.TextIndex);
 		}
 
 		if(moveFinish ){
@@ -106,34 +107,28 @@ public class Game1Controller : MonoBehaviour {
 			if(character == pikachu){
 				Mover mover = pikachu.GetComponent<Mover>();
 				if(mover.destination == road.position){
-					textPlayer.playText(
-						"ブルー：　ああ...ピカチュウ逃げた...\n"+
-						"グリーン：　レッドのせいだ、なぜ道路が守られない？\n"+
-						"レッド：　何だと！\n"+
-						"グリーン：　やる気か！");
+					textPlayer.loadTextFile("game1Fail1");
+					playEnd = true;
+					updateText();
 				}
 				else if(mover.destination == river.position){
-					textPlayer.playText(
-						"ブルー：　ピカチュウが水泳できるの？\n"+
-						"グリーン：　珍しいね、驚いた\n"+
-						"レッド：　あれが...なみのり？");					
+					textPlayer.loadTextFile("game1Fail2");
+					playEnd = true;
+					updateText();				
 				}
 				else if(mover.destination == redHouse.position){
-					textPlayer.playText(
-						"ママ：　レッド！！どうしてネズミが家に入る！？\n"+
-									"レッド：　しまった！！母ちゃん怒っていた！");
+					textPlayer.loadTextFile("game1Fail3");
+					playEnd = true;
+					updateText();
 				}
 				else if(mover.destination == greenHouse.position){
-					textPlayer.playText(
-						"ナナミ：　グリーン～ピカチュウを苛めるはだめよ～\n"+
-						"グリーン：　レッド！おまえのせいだ！！\n"+
-						"レッド：　オレは何もわからないわよ！\n");
+					textPlayer.loadTextFile("game1Fail4");
+					playEnd = true;
+					updateText();
 				}
 				else{
-					textPlayer.playText(
-						"グリーン：　オイ、ピカチュウが研究所の前に気を失った\n"+
-						"ブルー：　あ！！ひどいの傷！！\n"+
-						"レッド：　ピカチュウ！！！");
+					textPlayer.loadTextFile("game1End");
+					updateText();
 					win = true;
 				}
 				character = null;

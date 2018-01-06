@@ -38,7 +38,12 @@ public class TextPlayer : MonoBehaviour {
 		showArrow = true;
 		arrow.gameObject.SetActive(false);
 
-		string filename = SceneLoader.Instance.getCurrentSceneName();
+		textView.GetComponent<Text>().font = SceneLoader.Instance.currentFont;
+		loadTextFile(SceneLoader.Instance.getCurrentSceneName());
+	}
+
+	public void loadTextFile(string filename){
+		fileIndex = 0;
 		TextAsset story;
 
 		switch(SceneLoader.Instance.currentLanguage){
@@ -53,13 +58,7 @@ public class TextPlayer : MonoBehaviour {
 			story = Resources.Load("ch/"+filename) as TextAsset;
 			break;
 		}
-		textView.GetComponent<Text>().font = SceneLoader.Instance.currentFont;
-		loadTextFile(story);
-	}
-
-	void loadTextFile(TextAsset script){
-		fileIndex = 0;
-		fileLines = script.text.Split(new string[]{"\r\n","\n"},StringSplitOptions.None);
+		fileLines = story.text.Split(new string[]{"\r\n","\n"},StringSplitOptions.None);
 		isFile = true;
 	}
 

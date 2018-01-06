@@ -8,6 +8,8 @@ public class Title : MonoBehaviour {
 	public Button start;
 	public GameObject languageButton;
 	public GameObject languageView;
+
+	SceneLoader.Language tempLang;
 	// Use this for initialization
 	void Start () {
 		languageView.SetActive(false);
@@ -26,6 +28,7 @@ public class Title : MonoBehaviour {
 		languageButton.SetActive(true);
 	}
 	public void closeLanguageView(){
+		SceneLoader.Instance.setCurrentLanguage( tempLang);
 		languageView.SetActive(false);
 	}
 
@@ -48,12 +51,12 @@ public class Title : MonoBehaviour {
 	}
 
 	public void chooseJapanese(){
-		SceneLoader.Instance.setCurrentLanguage( SceneLoader.Language.japanese);
+		tempLang = SceneLoader.Language.japanese;
 	}
 	public void chooseEnglish(){
-		SceneLoader.Instance.setCurrentLanguage( SceneLoader.Language.english);
+		tempLang = SceneLoader.Language.english;
 	}
 	public void chooseChinese(){
-		SceneLoader.Instance.setCurrentLanguage( SceneLoader.Language.chinese);
+		tempLang = SceneLoader.Language.chinese;
 	}
 }
