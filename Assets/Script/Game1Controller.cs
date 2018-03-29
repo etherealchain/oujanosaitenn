@@ -37,6 +37,7 @@ public class Game1Controller : MonoBehaviour {
 	bool sceneChanged ;
 
 	AudioSource[] audioSources;
+	LangTable table;
 
 	void Awake(){
 		character = null;
@@ -55,6 +56,11 @@ public class Game1Controller : MonoBehaviour {
 		face = null;
 	}
 	void Start () {
+		// button setting
+		TextAsset json = Resources.Load("lang_table") as TextAsset;
+		table = JsonUtility.FromJson<LangTable>(json.text);
+		changeButtonText();
+		
 		audioSources = GetComponents<AudioSource>();
 		buttonView.gameObject.SetActive(false);
 		gameOverView.gameObject.SetActive(false);
@@ -150,6 +156,44 @@ public class Game1Controller : MonoBehaviour {
 					textPlayer.activeArrow();
 				}
 			}
+		}
+	}
+
+	void changeButtonText(){
+		Transform redHouseBut = buttonView.FindDeepChild("redHouse");
+		Transform greenHouseBut = buttonView.FindDeepChild("greenHouse");
+		Transform labBut = buttonView.FindDeepChild("lab");
+		Transform roadBut = buttonView.FindDeepChild("road");
+		Transform riverBut = buttonView.FindDeepChild("river");
+
+		redHouseBut.GetChild(0).GetComponent<Text>().font = SceneLoader.Instance.currentFont;
+		greenHouseBut.GetChild(0).GetComponent<Text>().font = SceneLoader.Instance.currentFont;
+		labBut.GetChild(0).GetComponent<Text>().font = SceneLoader.Instance.currentFont;
+		roadBut.GetChild(0).GetComponent<Text>().font = SceneLoader.Instance.currentFont;
+		riverBut.GetChild(0).GetComponent<Text>().font = SceneLoader.Instance.currentFont;
+
+		switch(SceneLoader.Instance.currentLanguage){
+			case SceneLoader.Language.japanese:
+			redHouseBut.GetChild(0).GetComponent<Text>().text = table.japanese[0];
+			greenHouseBut.GetChild(0).GetComponent<Text>().text = table.japanese[1];
+			labBut.GetChild(0).GetComponent<Text>().text = table.japanese[2];
+			roadBut.GetChild(0).GetComponent<Text>().text = table.japanese[3];
+			riverBut.GetChild(0).GetComponent<Text>().text = table.japanese[4];
+			break;
+			case SceneLoader.Language.english:
+			redHouseBut.GetChild(0).GetComponent<Text>().text = table.english[0];
+			greenHouseBut.GetChild(0).GetComponent<Text>().text = table.english[1];
+			labBut.GetChild(0).GetComponent<Text>().text = table.english[2];
+			roadBut.GetChild(0).GetComponent<Text>().text = table.english[3];
+			riverBut.GetChild(0).GetComponent<Text>().text = table.english[4];
+			break;
+			case SceneLoader.Language.chinese:
+			redHouseBut.GetChild(0).GetComponent<Text>().text = table.chinese[0];
+			greenHouseBut.GetChild(0).GetComponent<Text>().text = table.chinese[1];
+			labBut.GetChild(0).GetComponent<Text>().text = table.chinese[2];
+			roadBut.GetChild(0).GetComponent<Text>().text = table.chinese[3];
+			riverBut.GetChild(0).GetComponent<Text>().text = table.chinese[4];
+			break;
 		}
 	}
 
