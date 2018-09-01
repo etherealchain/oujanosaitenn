@@ -1,20 +1,20 @@
-レッド：　ピカチュウ！！どこにいるの？？
-レッド：　暗いな、ヒトカゲがいればよかった
-火が必要ですから、枝を捜してください
-入り口の近くに捜してください
-レッド：　火をおこす前に森の中に進めない方がいいです
-レッド：　よし、これでいい！
-ピカチュウを捜してください
-森の中に昔から住んでる
-レッド：　ピカチュウ！こちこち～
-レッド：　厄介な...木の実があれば...
-木の実を捜してください
-出口の近くに捜してください
-レッド：　やった！
-スペースキーで木の実をピカチュウの近くに置いてください
-レッド：　ピカチュウ～おいしいの木の実があるよ～
-レッド：　たぶんオレのことを恐れている...
-木の実を離れてください
-レッド：　よしよし、いい子だ、おなかへってんのか～
-レッド：　...！？...
-レッド：　あれが...オニスズメ！？危ない！ピカチュウ！！
+Red：　Pikachu！！Where are you？？
+Red：　It's so dark here, I wish I had a Charmander...
+We need fire, please search for twig
+There should be some near the entrance
+Red：　We shouldn't go deep in to the forest before we have fire...
+Red：　OK, this should work！
+Please search for Pikachu
+He live deep in the forest
+Red：　Pikachu！here here～
+Red：　It's not working... if I have a berry...
+Please search for berry
+There should be some near the exit
+Red：　Got it！
+Use space key to put the berry near pikachu
+Red：　Pikachu～ I got a delicious berry～
+Red：　Maybe he is afraid of me...
+Please leave the berry alone
+Red：　OK, good pikachu, you must be hungry～
+Red：　...！？...
+Red：　That is... Spearow！？Get down！Pikachu！！

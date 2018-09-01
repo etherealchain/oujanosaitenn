@@ -1,23 +1,23 @@
-グリーン：　フン、くだらない
-レッド：　何だと...あ！オイ、どこ行くんだよ！
-グリーン：　1番道路だよ！日が落ちる前にトキワに着きたいんだ
-グリーン：　ポケモンリーグセキエイ大会まであと1年、出場資格はジムバッジ8個の入手
-グリーン：　図鑑のこともあるし、もたもたしてられねーからな
-レッド：　...ポケモンリーグ...
-グリーン：　ま、お前には縁のないイベント...
-レッド：　そだ！あれだ！決着つけるぞ！
-グリーン：　はあ？？
-レッド：　決着はあそこだ！セキエイ高原ポケモンスタジアム！！
-レッド：　旅の最後にあそこで決着をつけようぜ！
-グリーン：　...お前がリーグね...身の程って言葉知ってるか？
-レッド：　心配しなくていいぜ、オレ達だって旅に出るんだ
-レッド：　旅をして、強くなって、8人のジムリーダーに勝って、リーグを勝ち抜いて、お前に勝って！！
-レッド：　ぜってーにトレーナーの頂点に立ってやる！！！
-グリーン：　......
-グリーン：　いいぜ
-レッド：　あ？
-グリーン：　ノッてやるって言ってんだよ、この決着は一年後のリーグでつけてやる
-グリーン：　ま、お前がリーグに出れる程の実力をつけられたら、の話だけどな！
-レッド：　はっ！そのセリフ、そっくりそのまま返してやるよ！
-レッド：　...さーて、オレ達も行こうぜ、冒険の第一步だ！！
-ピカチュウ：　ピッカ！
+Green：　Hun, waste my time
+Red：　What... Hey！Where are you going！
+Green：　To Route 1！I want to get to Viridian City before sun sets
+Green：　1 year until the Pokemon League, 8 badges are needed to enter
+Green：　Also the Pokedex to work on, I don't have time to waste here
+Red：　...Pokemon League...
+Green：　Well, it had nothing to do with you...
+Red：　That's it！The League！Let's finish there！
+Green：　Huh？？
+Red：　Finish our bittle！At Indigo Plateau, Pokemon Stadium！！
+Red：　At the end of journey let's finish everything there！
+Green：　...you? league?... Do you know you will never be able to keep that promise？
+Red：　Don't you worry about it, I'm going to travel too
+Red：　Through the journey I will be stronger, I will gather 8 badges to enter the league and beat you！！
+Red：　I WILL become the Pokemon Master！！！
+Green：　......
+Green：　Okey
+Red：　Ah？
+Green：　I said I accept your challenge, we will finish this at the League, 1 year later
+Green：　Well, only if you are good enough to enter the League in the first place！
+Red：　Hmph！Right back at you！
+Red：　...OK, let's go, first step！！
+Pikachu：　pika！

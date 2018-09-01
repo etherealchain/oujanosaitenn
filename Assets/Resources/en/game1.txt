@@ -1,8 +1,8 @@
-ピカチュウを捕まえてください
-とりあえず、出口を守ってください
-ブルー：　どこに守るの？
-ブルー：　はい、　わかったわ～
-グリーン：　はあ？守る？面倒くさいな...
-グリーン：　ちっ、分かった分かった...
-レッド：　オレは？
-レッド：　いけいけ！
+Let's catch pikachu
+Please guard the exits
+Blue：　Where do I go？
+Blue：　OK,　got it～
+Green：　Huh？ Guard？ What a waste...
+Green：　Yea yea, I will play...
+Red：　What about me？
+Red：　Let's catch him！
