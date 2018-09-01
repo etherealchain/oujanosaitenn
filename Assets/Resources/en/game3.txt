@@ -1,26 +1,26 @@
-Battle with Green！
-Green sent out Squirtle！
-Go！Charmander！
-Charmander used Cry！
-Charmander used Ember！
-Charmander used Flamethrower ！
-Charmander fainted！
-Go！Pikachu！
-Pikachu used Tail Whip！
-Pikachu used Thunder Shock！
-Pikachu used Thunderbolt！
-Pikachu fainted！
-You lost against Green！
-Green's Squirtle used Leer！
-Green's Squirtle used Water Gun！
-Green's Squirtle used Water Pulse！
-Green's Squirtle fainted！
-Green sent out Eevee！
-Green's Eevee used Sand Attack！
-Green's Eevee used Tackle！
-Green's Eevee used Swift！
-Green's Eevee fainted！
-You win against Green！
+Battle with Green!
+Green sent out Squirtle!
+Go! Charmander!
+Charmander used Cry!
+Charmander used Ember!
+Charmander used Flamethrower !
+Charmander fainted!
+Go! Pikachu!
+Pikachu used Tail Whip!
+Pikachu used Thunder Shock!
+Pikachu used Thunderbolt!
+Pikachu fainted!
+You lost against Green!
+Green's Squirtle used Leer!
+Green's Squirtle used Water Gun!
+Green's Squirtle used Water Pulse!
+Green's Squirtle fainted!
+Green sent out Eevee!
+Green's Eevee used Sand Attack!
+Green's Eevee used Tackle!
+Green's Eevee used Swift!
+Green's Eevee fainted!
+You win against Green!
 Opponent's SP had been cleared
-Small demage
-Crital demage
+Small Damage
+Critical Damage

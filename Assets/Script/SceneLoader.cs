@@ -18,6 +18,8 @@ public class SceneLoader : SingletonObject<SceneLoader>{
 		english,
 		chinese
 	}
+	[HideInInspector]
+	public LangTable table;
 
 	float fadeSpeed ;
 	float alpha ;
@@ -39,6 +41,10 @@ public class SceneLoader : SingletonObject<SceneLoader>{
 		useWhite = true;
 		currentLanguage = Language.japanese;
 		currentFont = Resources.Load("font/JKG-M_3") as Font;
+
+		// load language string
+		TextAsset json = Resources.Load("lang_table") as TextAsset;
+		table = JsonUtility.FromJson<LangTable>(json.text);
 	}
 	void OnEnable(){
 		SceneManager.sceneLoaded += onLevelLoaded;

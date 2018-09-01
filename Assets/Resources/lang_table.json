@@ -4,20 +4,38 @@
 		"グリーンの家",
 		"オーキド研究所",
 		"1番道路",
-		"21番水道"
+		"21番水道",
+		"三年後",
+		"一年後",
+		"セキエイ高原",
+		"ZとXキーを連続押す、SPを貯めて、スペースキーで技を使ってください\n第一技は相手のSPをクリアできる\n第二技は小さいなダメージを与える\n第三技は大きいなダメージを与える",
+		"つづく",
+		"プレイしてくれて感謝します"
     ],
     "english":[
 		"Red's home",
 		"Green's home",
 		"Professor Oak's Laboratory",
 		"Route 1",
-		"Route 21"
+		"Route 21",
+		"3 years later",
+		"1 year later",
+		"Indigo Plateau",
+		"Repeatedly pressing Z and X key to store SP, use space key to attack\nLevel 1 clear opponent's SP\nLevel 2 deals small damage\nLevel 3 deals critical damage",
+		"To be continued",
+		"Thanks for playing!"
     ],
     "chinese":[
-        "赤紅的家",
+    "赤紅的家",
 		"青綠的家",
 		"大木研究所",
 		"1號道路",
-		"21號水道"
+		"21號水道",
+		"三年後",
+		"一年後",
+		"石英高原",
+		"連擊Ｚ和Ｘ鍵來集氣吧，按下空白鍵來攻擊\n第一招可以將對手的ＳＰ歸零\n第二招造成輕微傷害\n第三招造成重大傷害",
+		"待續",
+		"感謝遊玩！"
     ]
 }

@@ -1,0 +1,12 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Interview",
+"dataUrl": "ttt.data.unityweb",
+"wasmCodeUrl": "ttt.wasm.code.unityweb",
+"wasmFrameworkUrl": "ttt.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
