@@ -5,7 +5,7 @@ using UnityEngine;
 public class BattleRed : BattleBase {
 
 	bool tap;
-
+	float spIncrease = 2.5f;
 	protected override void Awake(){
 		base.Awake();
 		tap = false;
@@ -25,11 +25,11 @@ public class BattleRed : BattleBase {
 			if(sp < MaxValue){
 				if(tap && Input.GetKeyDown(KeyCode.Z)){
 					tap = false;
-					sp+=1.2f;
+					sp+=spIncrease;
 				}
 				else if(!tap && Input.GetKeyDown(KeyCode.X)){
 					tap = true;
-					sp+=1.2f;
+					sp+=spIncrease;
 				}
 			}
 			if(Input.GetKeyDown(KeyCode.Space)){

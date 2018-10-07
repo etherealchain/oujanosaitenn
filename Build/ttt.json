@@ -1,6 +1,6 @@
 {
-"companyName": "DefaultCompany",
-"productName": "Interview",
+"companyName": "etherchain",
+"productName": "PokemonDemo",
 "dataUrl": "ttt.data.unityweb",
 "wasmCodeUrl": "ttt.wasm.code.unityweb",
 "wasmFrameworkUrl": "ttt.wasm.framework.unityweb",

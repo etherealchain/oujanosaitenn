@@ -57,13 +57,13 @@ public class BattleGreen : BattleBase {
 			float redSp = red.getSp();
 			
 			if(redSp > MaxValue*2/3){
-				if(Random.value < 0.2f){
+				if(Random.value < 0.05f){
 					gameController.Attack(false,pokemonPoint,1);
 					sp = MinVlaue;
 				}
 			}
 			else if(redSp > MaxValue/3){
-				if(Random.value < 0.1f){
+				if(Random.value < 0.01f){
 					gameController.Attack(false,pokemonPoint,1);
 					sp = MinVlaue;
 				}
@@ -73,7 +73,7 @@ public class BattleGreen : BattleBase {
 	IEnumerator battle(){
 		battleRoutineStarted = true;
 		while(battleRoutineStarted){
-			yield return new WaitForSeconds(2);
+			yield return new WaitForSeconds(0.6f);
 			checkAttack();
 		}
 	}
@@ -81,7 +81,7 @@ public class BattleGreen : BattleBase {
 	IEnumerator spIncrease(){
 		spControl = true;
 		while(sp < MaxValue){
-			sp += 0.1f;
+			sp += 0.3f;
 			yield return new WaitForSeconds(0.01f);
 		}
 		spControl = false;

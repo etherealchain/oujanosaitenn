@@ -22,6 +22,8 @@ public class BattleBase : MonoBehaviour {
 	protected Coroutine spRoutine;
 	protected bool spControl;
 
+	float smallDamage = 35;
+	float bigDamage = 50;
 	protected virtual void Awake(){
 		pokemonPoint = 2;
 		spRoutine = null;
@@ -97,11 +99,11 @@ public class BattleBase : MonoBehaviour {
 	public void setSptoZero(){
 		StartCoroutine(spToZero());
 	}
-	public void minusHp20(){
-		StartCoroutine(hpMinus(20));
+	public void minusHpSmall(){
+		StartCoroutine(hpMinus(smallDamage));
 	}
-	public void minusHp40(){
-		StartCoroutine(hpMinus(40));
+	public void minusHpBig(){
+		StartCoroutine(hpMinus(bigDamage));
 	}
 	IEnumerator spToZero(){
 		while(sp > MinVlaue){

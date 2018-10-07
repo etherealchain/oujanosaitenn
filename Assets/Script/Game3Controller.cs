@@ -145,7 +145,7 @@ public class Game3Controller : MonoBehaviour {
 					textPlayer.setTextIndex(4);
 				else
 					textPlayer.setTextIndex(9);
-				battleGreen.minusHp20();
+				battleGreen.minusHpSmall();
 				if(battleGreen.pokemonPoint == 2)
 					squirtle.GetComponent<Animator>().SetTrigger("hitted");
 				else
@@ -156,7 +156,7 @@ public class Game3Controller : MonoBehaviour {
 					textPlayer.setTextIndex(14);
 				else
 					textPlayer.setTextIndex(19);
-				battleRed.minusHp20();
+				battleRed.minusHpSmall();
 				if(battleRed.pokemonPoint == 2)
 					charmander.GetComponent<Animator>().SetTrigger("hitted");
 				else
@@ -170,7 +170,7 @@ public class Game3Controller : MonoBehaviour {
 					textPlayer.setTextIndex(5);
 				else
 					textPlayer.setTextIndex(10);
-				battleGreen.minusHp40();
+				battleGreen.minusHpBig();
 				if(battleGreen.pokemonPoint == 2)
 					squirtle.GetComponent<Animator>().SetTrigger("hitted");
 				else
@@ -181,7 +181,7 @@ public class Game3Controller : MonoBehaviour {
 					textPlayer.setTextIndex(15);
 				else
 					textPlayer.setTextIndex(20);
-				battleRed.minusHp40();
+				battleRed.minusHpBig();
 				if(battleRed.pokemonPoint == 2)
 					charmander.GetComponent<Animator>().SetTrigger("hitted");
 				else

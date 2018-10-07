@@ -31,7 +31,7 @@ public class Walking : MonoBehaviour {
 		}
 	}
 	void Awake(){
-		forceScale = 50;
+		forceScale = 80;
 		isWalking = false;
 	}
 
