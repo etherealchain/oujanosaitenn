@@ -7,4 +7,4 @@ Story & Image from
 
 Music and Sprite search from google
 
-Pokemon's copyright belongs to Nintendo and Pockemon Company
+Pokemon's copyright belongs to Nintendo and Pokemon Company
