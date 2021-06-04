@@ -81,7 +81,7 @@ public class BattleGreen : BattleBase {
 	IEnumerator spIncrease(){
 		spControl = true;
 		while(sp < MaxValue){
-			sp += 0.3f;
+			sp += 0.1f;
 			yield return new WaitForSeconds(0.01f);
 		}
 		spControl = false;
