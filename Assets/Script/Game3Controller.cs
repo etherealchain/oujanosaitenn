@@ -62,6 +62,7 @@ public class Game3Controller : MonoBehaviour {
 	void updateText(int index){
 		if(textPlayer.isPlaying){
 			textPlayer.finishText();
+			StartCoroutine(delayUpdate(2, index));
 		}
 		else{
 			textPlayer.setTextIndex(index);
