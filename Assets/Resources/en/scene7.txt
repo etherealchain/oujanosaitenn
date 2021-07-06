@@ -1,23 +1,23 @@
-Green: Hun, waste my time
+Green: Hun, what a waste of time!
 Red: What... Hey! Where are you going!
-Green: To Route 1! I want to get to Viridian City before sun sets
-Green: 1 year until the Pokemon League, 8 badges are needed to enter
-Green: Also the Pokedex to work on, I don't have time to waste here
+Green: To Route 1! I want to get to Viridian City before the sun sets
+Green: 1 year until the Pokemon League, 8 badges are required to participate
+Green: Also, I got the Pokedex to work on; I don't have time to waste here
 Red: ... Pokemon League...
-Green: Well, it had nothing to do with you...
+Green: Well, it has nothing to do with you...
 Red: That's it! The League! Let's finish there!
 Green: Huh??
-Red: Finish our bittle! At Indigo Plateau, Pokemon Stadium!!
-Red: At the end of journey let's finish everything there!
-Green: ...you? league?... Do you know you will never be able to keep that promise?
-Red: Don't you worry about it, I'm going to travel too
-Red: Through the journey I will be stronger, I will gather 8 badges to enter the league and beat you!!
+Red: Finish our battle! At Indigo Plateau, Pokemon Stadium!!
+Red: At the end of our journey, let's finish everything there!
+Green: ...You? League?... Do you realize you'll never be able to keep that promise?
+Red: Don't worry about it, I'm going to travel too
+Red: Through the journey I will become stronger, I will gather 8 badges to enter the League and beat you!!
 Red: I WILL become the Pokemon Master!!!
 Green: ......
-Green: Okey
+Green: Okay
 Red: Ah?
-Green: I said I accept your challenge, we will finish this at the League, 1 year later
+Green: I accept your challenge, we will finish this at the League, 1 year later
 Green: Well, only if you are good enough to enter the League in the first place!
 Red: Hmph! Right back at you!
-Red: ...OK, let's go, first step!!
+Red: ...OK, let's go! Our first step!!
 Pikachu: pika!

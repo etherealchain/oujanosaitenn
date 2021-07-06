@@ -21,6 +21,6 @@ Green's Eevee used Tackle!
 Green's Eevee used Swift!
 Green's Eevee fainted!
 You win against Green!
-Opponent's SP had been cleared
-Small Damage
+Opponent's SP had been depleted
+Minor Damage
 Critical Damage
